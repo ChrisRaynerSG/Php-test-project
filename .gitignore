@@ -1,21 +1,53 @@
-# the composer package lock file and install directory
-# Commit your application's lock file http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
-# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
-# /composer.lock
-/fuel/vendor
+# Ignore Mac system files
+.DS_Store
 
-# the fuelphp document
-/docs/
+# Ignore hidden files created by various IDEs and editors
+.idea/
+*.sublime-project
+*.sublime-workspace
+.vscode/
+nbproject/
+.project
+.settings/
+.buildpath
 
-# you may install these packages with `oil package`.
-# http://fuelphp.com/docs/packages/oil/package.html
-# /fuel/packages/auth/
-# /fuel/packages/email/
-# /fuel/packages/oil/
-# /fuel/packages/orm/
-# /fuel/packages/parser/
+# Composer dependencies
+/vendor/
+/composer.lock
 
-# dynamically generated files
-/fuel/app/logs/*/*/*
-/fuel/app/cache/*/*
-/fuel/app/config/crypt.php
+# PHPStorm specific files and directories
+*.iml
+*.iws
+.idea/*
+!*.idea/workspace.xml
+!*.idea/tasks.xml
+!*.idea/dictionaries
+!*.idea/libraries
+
+# Ignore PHPUnit's test result cache and coverage report
+.phpunit.result.cache
+coverage/
+
+# Ignore log files
+*.log
+
+# Ignore environment files
+.env
+.env.local
+.env.*.local
+
+# Ignore build artifacts
+/build/
+/dist/
+
+# Ignore temporary and cache files
+/tmp/
+/cache/
+/*.bak
+
+# Ignore Node and npm dependencies
+node_modules/
+
+# Ignore other system files
+Thumbs.db
+ehthumbs.db
